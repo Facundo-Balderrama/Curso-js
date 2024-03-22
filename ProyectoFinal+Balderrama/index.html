@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title> BULL MARKET </title>
+</head>
+
+<body>
+    <!--HEADER-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light barra">
+        <img src="./img/divisa.png" alt="">
+        <a class="navbar-brand" href="./index.html">Bienvenidos a BULL MARKET, la mejor casa de cotizacion</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html"> INICIO <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        SECCIONES
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#cotizacion"> COTIZACIÓN </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#calculadora"> CALCULADORA </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#ingresar"> INGRESAR </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--COTIZACIÓN-->
+    <div class="title espacio">
+
+        <h3 id="cotizacion"> COTIZACIÓN </h3>
+
+    </div>
+
+    <section class="padding--margin">
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Símbolo</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio Compra</th>
+                    <th scope="col">Precio Venta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td class="primerDivisa">USD</td>
+                    <td class="primerDivisa">DOLAR</td>
+                    <td class="primerDivisa">$995</td>
+                    <td class="primerDivisa">$1015</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td class="segundaDivisa">EUR</td>
+                    <td class="segundaDivisa">EURO</td>
+                    <td class="segundaDivisa">$916.08</td>
+                    <td class="segundaDivisa">$916.96</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td class="tercerDivisa">BRL</td>
+                    <td class="tercerDivisa">REAL</td>
+                    <td class="tercerDivisa">$170.65</td>
+                    <td class="tercerDivisa">$170.79</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+
+    <!--CALCULADORA-->
+    <div class="title">
+
+        <h3 id="calculadora"> CALCULADORA </h3>
+
+    </div>
+
+    
+
+    <section class="padding--margin">
+        <form id="formCalculadora">
+            <div class="input-group mb-3">
+
+                <select class="custom-select" id="inputGroupSelect03">
+                    <option selected disabled>Elige el tipo de operación que desea realizar</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">De: </label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected disabled>Elige el tipo de divisa</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input id="cantidadDivisaCalcular" type="text" class="form-control"
+                    aria-label="Amount (to the nearest dollar)" placeholder="Ingrese la cantidad a consultar...">
+                <div class="input-group-append">
+                    <span class="input-group-text">.00</span>
+                </div>
+            </div>
+
+            <button id="botonCalcular" class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+
+        <p id="resumenCalculadora"></p>
+    </section>
+
+
+    <!--INGRESAR-->
+    <div class="title">
+
+        <h3 id="ingresar"> INGRESAR </h3>
+
+    </div>
+
+    
+
+    <section class="padding--margin" id="lista-usuarios">
+
+        <form id="formLogIn">
+            <div class="form-group">
+                <label for="inputAddress">Nombre de Usuario: </label>
+                <input type="text" class="form-control" id="nombreLogIn" placeholder="Introduzca el nombre de usuario">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email: </label>
+                    <input type="email" class="form-control" id="correoLogIn"
+                        placeholder="Introduzca su correo electrónico">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Contraseña: </label>
+                    <input type="password" class="form-control" id="contraseniaLogIn"
+                        placeholder="Introduzca la contraseña">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
+
+        <p id="resumenLogIn"></p>
+
+    </section>
+
+
+    <!--FOOTER-->
+
+    <footer>
+        <div class="padding">
+                <p> © Todos los derechos reservados</p>
+        </div>
+
+    </footer>
+
+    <!--BOOTSTRAP-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+    <!--SWEET ALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+    <!--SCRIPT-->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
